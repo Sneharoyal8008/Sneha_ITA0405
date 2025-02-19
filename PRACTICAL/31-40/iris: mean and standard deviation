@@ -1,0 +1,4 @@
+# Calculate mean and standard deviation grouped by species
+grouped_stats <- aggregate(iris[, 1:4], by = list(Species = iris$Species), FUN = function(x) c(mean = mean(x), sd = sd(x)))
+print("Mean and Standard Deviation grouped by Species:")
+print(grouped_stats)
