@@ -1,0 +1,8 @@
+# Load the women dataset (height and weight)
+data("women")
+
+# Create a factor based on height
+height_factor <- factor(women$height)
+
+# Display the factor created
+print(height_factor)
