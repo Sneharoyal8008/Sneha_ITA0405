@@ -1,0 +1,21 @@
+# Load the Iris dataset
+data(iris)
+
+# Find the dimension of the dataset
+dim_iris <- dim(iris)
+print(paste("Dimensions of the Iris dataset: ", paste(dim_iris, collapse = " x ")))
+
+# Find the structure of the dataset
+str_iris <- str(iris)
+print("Structure of the Iris dataset:")
+print(str_iris)
+
+# Summary statistics
+summary_iris <- summary(iris)
+print("Summary statistics of the Iris dataset:")
+print(summary_iris)
+
+# Standard deviation of all features (numerical variables)
+std_dev_iris <- apply(iris[, 1:4], 2, sd)
+print("Standard deviation of features:")
+print(std_dev_iris)
