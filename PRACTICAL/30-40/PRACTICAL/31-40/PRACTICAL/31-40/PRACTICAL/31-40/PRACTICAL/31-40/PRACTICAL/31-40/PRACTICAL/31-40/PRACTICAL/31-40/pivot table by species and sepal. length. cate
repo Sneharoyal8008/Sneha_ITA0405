@@ -1,0 +1,9 @@
+# Create a pivot table based on Species and Sepal.Length.Cate
+library(reshape2)
+
+# Create the pivot table
+pivot_table <- dcast(iris1, Species ~ Sepal.Length.Cate, value.var = c("Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width"), fun.aggregate = mean)
+
+# Display the pivot table
+print("Pivot table based on Species and Sepal.Length.Cate:")
+print(pivot_table)
