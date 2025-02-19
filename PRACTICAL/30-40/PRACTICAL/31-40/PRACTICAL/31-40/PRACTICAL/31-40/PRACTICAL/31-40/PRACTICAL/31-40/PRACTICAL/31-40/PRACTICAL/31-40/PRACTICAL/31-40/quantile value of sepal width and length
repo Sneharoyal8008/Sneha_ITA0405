@@ -1,0 +1,9 @@
+# Quantile values for Sepal.Width and Sepal.Length
+quantile_sepal_width <- quantile(iris$Sepal.Width)
+quantile_sepal_length <- quantile(iris$Sepal.Length)
+
+print("Quantiles of Sepal.Width:")
+print(quantile_sepal_width)
+
+print("Quantiles of Sepal.Length:")
+print(quantile_sepal_length)
