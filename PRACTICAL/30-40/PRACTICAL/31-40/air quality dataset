@@ -1,0 +1,15 @@
+# Load the airquality dataset
+data("airquality")
+
+# Check if it's a data frame
+is_data_frame <- is.data.frame(airquality)
+print(is_data_frame)
+
+# Order the data frame by the first and second columns (Ozone and Solar.R)
+ordered_airquality <- airquality[order(airquality$Ozone, airquality$Solar.R),]
+
+# Remove 'Solar.R' and 'Wind' columns
+ordered_airquality <- ordered_airquality[, !(names(ordered_airquality) %in% c("Solar.R", "Wind"))]
+
+# Display the modified data frame
+print(ordered_airquality)
