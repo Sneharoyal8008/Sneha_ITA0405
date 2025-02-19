@@ -1,0 +1,5 @@
+# Calculate average mean value of numerical variables by Species and Sepal.Length.Cate
+avg_mean_by_species_sepal_length_cate <- aggregate(iris1[, 1:4], by = list(Species = iris1$Species, Sepal.Length.Cate = iris1$Sepal.Length.Cate), FUN = mean)
+
+print("Average mean values of numerical variables by Species and Sepal.Length.Cate:")
+print(avg_mean_by_species_sepal_length_cate)
